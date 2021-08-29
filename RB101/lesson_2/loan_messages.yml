@@ -1,0 +1,6 @@
+intro: "Car Loan Calculator"
+apr_text: "What is the Annual Percentage Rate (APR)?"
+loan_text: "What is the loan amount?"
+length_text: "What is the length of loan? (in months)"
+# monthly_payment
+# monthly_rate
