@@ -2,5 +2,5 @@ intro: "Car Loan Calculator"
 apr_text: "What is the Annual Percentage Rate (APR)?"
 loan_text: "How much is the loan for?"
 length_text: "What is the length of loan? (in months)"
-# monthly_payment
+monthly_payment_text: "Your monthly payment is: "
 # monthly_rate
