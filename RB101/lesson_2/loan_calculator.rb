@@ -32,9 +32,11 @@ MESSAGES = YAML.load_file('loan_messages.yml')
 def duration_valid?(loan_length)
   loan_length > 0 && loan_length < 999
 end
+
 def apr_valid?(apr)
   apr > 0 && apr <= 20
 end
+
 def loan_amount_valid?(loan_amount)
   loan_amount > 0 && loan_amount < 500_000
 end
@@ -56,7 +58,10 @@ until apr_valid?(apr)
   apr = (gets.to_f) * 0.01
 end
 monthly_rate = apr / 12
-monthly_payment = (loan_amount * (monthly_rate/ (1 - (1 + monthly_rate)**(-loan_length)))).round(2)
+monthly_payment = (loan_amount *
+                  (monthly_rate / 
+                  (1 - (1 + monthly_rate)**
+                  (-loan_length)))).round(2)
 # puts apr
 # puts monthly_rate
 # puts monthly_payment
