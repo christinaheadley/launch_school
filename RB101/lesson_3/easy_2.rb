@@ -94,3 +94,26 @@ flintstones = %w[Fred Barney Wilma Betty BamBam Pebbles]
 
 # A: flintstones.push("Dino").push("Hoppy")   # push returns the array so we can chain
 # flintstones.concat(%w(Dino Hoppy))  # concat adds an array rather than one item
+
+# 8.Shorten the following sentence:
+
+# advice = "Few things in life are as important as house training your pet dinosaur."
+# # Review the String#slice! documentation, and use that method to make the return value "Few things in life are as important as ". But leave the advice variable as "house training your pet dinosaur.".
+# advice.slice!("Few things in life are as important as")
+# As a bonus, what happens if you use the String#slice method instead?
+# A: advice.slice!(0, advice.index('house'))
+
+# 9. Write a one-liner to count the number of lower-case 't' characters in the following string:
+
+# statement = "The Flintstones Rock!"
+# p statement.count 't' #OR statement.count('t')
+
+# 10. 
+title = "Flintstone Family Members"
+while title.length <= 40
+  title.insert(0, ' ')
+  title.insert(-1, " ")
+end
+p title
+p title.size
+A: title.center(40)
